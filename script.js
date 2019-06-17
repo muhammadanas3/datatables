@@ -1,3 +1,8 @@
 $(document).ready(function() {
-    $('#mydatatable').DataTable();
+    var table = $('#mydatatable').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
 } );
